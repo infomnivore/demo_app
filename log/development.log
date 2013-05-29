@@ -195,3 +195,175 @@ Migrating to CreateMicroposts (20130529020805)
   [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130529020805')[0m
   [1m[35m (1.8ms)[0m  commit transaction
   [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+
+
+Started GET "/users" for 127.0.0.1 at 2013-05-28 22:10:21 -0400
+Connecting to database specified by database.yml
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (40.0ms)
+Compiled microposts.css  (10ms)  (pid 7260)
+Compiled application.css  (22ms)  (pid 7260)
+Compiled microposts.js  (146ms)  (pid 7260)
+Compiled application.js  (220ms)  (pid 7260)
+Completed 200 OK in 444ms (Views: 390.9ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /microposts.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /scaffolds.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /microposts.js - 200 OK (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (51ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:22 -0400
+Served asset /application.js - 304 Not Modified (28ms)
+
+
+Started GET "/microposts" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Processing by MicropostsController#index as HTML
+  [1m[35mMicropost Load (0.4ms)[0m  SELECT "microposts".* FROM "microposts" 
+  Rendered microposts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/microposts/new" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Processing by MicropostsController#new as HTML
+  Rendered microposts/_form.html.erb (12.2ms)
+  Rendered microposts/new.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 35ms (Views: 27.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:33 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/microposts" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Processing by MicropostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HKBi+EgBsGeaBGJC3z5pvH55ws4/JhnYBJU2/08C0tA=", "micropost"=>{"content"=>"Here's my first micropost!", "user_id"=>"1"}, "commit"=>"Create Micropost"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (11.7ms)[0m  INSERT INTO "microposts" ("content", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)  [["content", "Here's my first micropost!"], ["created_at", Wed, 29 May 2013 02:10:44 UTC +00:00], ["updated_at", Wed, 29 May 2013 02:10:44 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/microposts/1
+Completed 302 Found in 20ms (ActiveRecord: 13.1ms)
+
+
+Started GET "/microposts/1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Processing by MicropostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mMicropost Load (1.4ms)[0m  SELECT "microposts".* FROM "microposts" WHERE "microposts"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered microposts/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/microposts.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /microposts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/microposts.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /microposts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-05-28 22:10:44 -0400
+Served asset /application.js - 304 Not Modified (0ms)
